@@ -1,6 +1,9 @@
 # *CURSO GIT*
 ## Clase 1 :Introducción a Git
 ### CONCEPTO:
+<span style="color:red">Este texto es rojo</span>
+### <span style="color:red">CONCEPTO:</span>
+
 Git es un sistema de control de versiones distribuido que facilita el seguimineto de cambios en archivos y la coordinacion del trabajo en equipo en proyectos de software.
 
 [![5c9deef127c7d783462103.png](https://i.postimg.cc/SQtqmJYB/5c9deef127c7d783462103.png)](https://postimg.cc/23vgwjwG)
@@ -163,7 +166,7 @@ Gitflow se integra bien con diversas herramientas y servicios, incluyendo:
 En esta clase aprenderemos sobre las prácticas recomendadas para el uso eficiente y seguro de Git. Estas prácticas son fundamentales para mantener la integridad y la colaboración en un proyecto de software. Algunas de estas prácticas incluyen:
 
 > [!TIP]
-> .- **Escribir mensajes de commit claros:** Los mensajes de commit deben ser descriptivos y concisos, explicando de manera clara los cambios introducidos en el commit. Esto facilita la comprensión de los cambios realizados y su seguimiento en el historial del repositorio.
+> - **Escribir mensajes de commit claros:** Los mensajes de commit deben ser descriptivos y concisos, explicando de manera clara los cambios introducidos en el commit. Esto facilita la comprensión de los cambios realizados y su seguimiento en el historial del repositorio.
 >
 >- **Mantener ramas limpias:** Es importante mantener un número limitado de ramas en el repositorio y eliminar aquellas que ya no son necesarias. Las ramas deben tener nombres descriptivos y reflejar claramente su propósito, evitando ramas ambiguas o redundantes.
 >
@@ -172,7 +175,7 @@ En esta clase aprenderemos sobre las prácticas recomendadas para el uso eficien
 ### Recomendaciones adicionales
 
 > [!TIP]
-> .Además de las prácticas básicas mencionadas anteriormente, aquí hay algunas recomendaciones adicionales para mejorar la gestión de tu proyecto con Git:
+> Algunas recomendaciones adicionales para mejorar la gestión de tu proyecto con Git:
 >
 >- **Utilizar branches por características:** En lugar de trabajar directamente en la rama principal del proyecto, considera crear branches separadas para cada nueva característica o corrección de errores. Esto facilita el seguimiento de los cambios y permite una mayor colaboración entre los miembros del equipo.
 >
