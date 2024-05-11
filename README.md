@@ -1,8 +1,8 @@
 # *CURSO GIT*
 ## Clase 1 :Introducción a Git
 ### CONCEPTO:
-<span style="color:red">Este texto es rojo</span>
-### <span style="color:red">CONCEPTO:</span>
+
+### CONCEPTO`#0969DA`
 
 Git es un sistema de control de versiones distribuido que facilita el seguimineto de cambios en archivos y la coordinacion del trabajo en equipo en proyectos de software.
 
