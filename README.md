@@ -117,3 +117,64 @@ El proceso de compartir y colaborar en proyectos Git involucra tres acciones fun
   
 - **Squash**: Combina varios commits en uno solo, lo que puede ser útil para agrupar cambios relacionados y mantener un historial de commits más conciso.
 
+## Clase 4: Push, Pull y Pull Request
+
+### **Concepto básico**
+El proceso de compartir y colaborar en proyectos Git involucra tres acciones fundamentales:
+
+- **Push**: Este comando envía tus cambios locales al repositorio remoto, permitiendo que otros miembros del equipo accedan a tus contribuciones.
+  
+- **Pull**: Utilizado para obtener y fusionar los cambios desde el repositorio remoto a tu repositorio local, manteniendo tu copia del proyecto actualizada con la última versión.
+
+- **Pull Request**: Una pull request es una propuesta de cambios que deseas integrar en el repositorio principal. Esta función es característica de plataformas de alojamiento de repositorios como GitHub, GitLab o Bitbucket. Facilita la revisión y discusión de cambios antes de fusionarlos en el repositorio principal.
+
+### **Comandos**
+- `git push`: Envía los cambios realizados en tu repositorio local al repositorio remoto.
+  
+- `git pull`: Obtiene los cambios del repositorio remoto y los fusiona automáticamente en tu repositorio local.
+  
+### **Flujo de trabajo sugerido**
+1. **Crear una rama**: Antes de empezar a trabajar en una nueva funcionalidad, crea una rama nueva utilizando `git branch <nombre_rama>` y cámbiate a ella con `git checkout <nombre_rama>`.
+  
+2. **Realizar cambios**: Haz tus cambios en la rama creada y realiza commits regulares para mantener un historial claro de tus modificaciones.
+  
+3. **Sincronizar con el repositorio remoto**: Antes de enviar tus cambios, asegúrate de estar actualizado con el repositorio remoto utilizando `git pull`.
+  
+4. **Enviar tus cambios**: Utiliza `git push` para enviar tus cambios al repositorio remoto. Si estás trabajando en una rama diferente de la principal, puedes hacer un pull request para que tus cambios sean revisados antes de fusionarlos.
+  
+5. **Fusionar cambios**: Una vez que tus cambios han sido revisados y aprobados en el pull request, puedes fusionarlos en la rama principal utilizando la interfaz de la plataforma de alojamiento del repositorio o el comando `git merge`.
+
+### **Extras**
+- **Rebase**: Un método alternativo para integrar cambios que altera la historia de commits. Puede ser útil para mantener un historial de commits más limpio y lineal.
+  
+- **Squash**: Combina varios commits en uno solo, lo que puede ser útil para agrupar cambios relacionados y mantener un historial de commits más conciso.
+
+## Clase 5: Gitflow
+
+### Concepto básico
+Gitflow es un flujo de trabajo para Git que define una estructura de ramas y reglas para facilitar el desarrollo colaborativo en proyectos de software. Propuesto por Vincent Driessen en 2010, Gitflow se ha convertido en un modelo popular para organizar el flujo de trabajo en equipos de desarrollo.
+
+Gitflow se basa en la idea de tener dos ramas principales permanentes: `master` y `develop`. La rama `master` contiene el código estable y se utiliza para producir versiones de producción, mientras que la rama `develop` es la rama base para el desarrollo en curso. Además, Gitflow define varias ramas secundarias para características, versiones, hotfixes y lanzamientos.
+
+### Ventajas de Gitflow
+- **Claridad en el flujo de trabajo:** La estructura definida de ramas brinda una visión clara del progreso del desarrollo y el estado del código.
+- **Separación de preocupaciones:** Las ramas separadas para características, hotfixes y versiones permiten trabajar en paralelo en diferentes aspectos del proyecto sin interferencias.
+- **Facilidad para la colaboración:** Al seguir un modelo estandarizado, los equipos pueden colaborar de manera eficiente y predecible.
+
+### Comandos comunes en Gitflow
+Aunque no existen comandos específicos para Gitflow, su implementación implica el uso de varias operaciones comunes en Git:
+
+- **Crear una nueva rama de función:** `git checkout -b feature/nombre_feature develop`
+- **Iniciar un nuevo hotfix:** `git checkout -b hotfix/nombre_hotfix master`
+- **Iniciar un nuevo release:** `git checkout -b release/1.0 develop`
+- **Terminar una rama de función o hotfix:** `git merge --no-ff feature/nombre_feature` o `git merge --no-ff hotfix/nombre_hotfix`
+- **Publicar una rama:** `git push origin nombre_rama`
+
+### Integración con herramientas
+Gitflow se integra bien con diversas herramientas y servicios, incluyendo:
+- **Git Extensions:** Proporciona soporte gráfico para el flujo de trabajo de Gitflow.
+- **GitKraken:** Ofrece una interfaz gráfica intuitiva que facilita la gestión de ramas y fusión según el modelo Gitflow.
+- **GitHub Actions:** Permite automatizar flujos de trabajo basados en eventos, como despliegues automáticos después de la finalización de una rama de release.
+
+### Conclusiones
+Gitflow proporciona una estructura organizativa sólida y predecible para proyectos de desarrollo de software. Al seguir este modelo, los equipos pueden gestionar eficazmente el flujo de trabajo, colaborar de manera efectiva y entregar software de alta calidad de manera constante.
