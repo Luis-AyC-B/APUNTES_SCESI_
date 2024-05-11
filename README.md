@@ -243,3 +243,22 @@ El registro de referencia (`reflog`) registra los cambios en el puntero HEAD, lo
 ### Recomendaciones
 - Antes de utilizar comandos que reescriben la historia del repositorio, asegúrate de entender las implicaciones y comunica tus acciones a los colaboradores del proyecto.
 - Utiliza herramientas visuales como `gitk` o `git gui` para visualizar el historial del repositorio y comprender mejor los cambios realizados.
+
+## Clase 8: Hooks, Alias y Trucos de Git
+
+### Concepto básico:
+Git ofrece características avanzadas que pueden mejorar significativamente la eficiencia y la automatización del flujo de trabajo. Algunas de estas características incluyen:
+
+- **Hooks:** Son scripts que se ejecutan automáticamente en respuesta a ciertos eventos en Git, como pre-commit (antes de confirmar cambios) o post-merge (después de fusionar ramas). Los hooks permiten personalizar y automatizar tareas específicas del proyecto, como ejecutar pruebas unitarias o notificar a los miembros del equipo sobre cambios importantes.
+
+- **Alias:** Los alias son atajos que permiten crear abreviaciones para comandos Git largos y frecuentemente utilizados. Por ejemplo, puedes crear un alias "st" para "git status" o "cm" para "git commit -m".
+
+- **Varios trucos:** Además de los hooks y los alias, existen numerosos trucos y técnicas que los usuarios avanzados pueden emplear para optimizar su flujo de trabajo con Git. Estos trucos pueden incluir la combinación de comandos Git en secuencias eficientes, el uso de herramientas externas para complementar las funcionalidades de Git, o la integración de Git con otras herramientas de desarrollo.
+
+### Comandos útiles:
+
+- `git hooks`: Permite gestionar los hooks en un repositorio. Puedes agregar, eliminar o modificar los scripts de hook según las necesidades del proyecto.
+  
+- `git config --global alias.<nombre_alias> "<comando>"`: Crea un alias global para un comando de Git. Esto es útil para definir atajos personalizados que se aplicarán en todos los repositorios.
+
+- Además de los comandos mencionados, los trucos específicos pueden variar según las necesidades del usuario y las particularidades del proyecto. Algunos ejemplos comunes incluyen la optimización de la configuración de Git, la automatización de tareas repetitivas mediante scripts personalizados, o el uso de extensiones de terceros para ampliar las capacidades de Git.
