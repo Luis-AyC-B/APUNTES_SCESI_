@@ -213,3 +213,33 @@ Puedes seguir estas prácticas en tu flujo de trabajo de Git directamente desde 
 - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Ayuda a detectar errores de ortografía en tus mensajes de commit y comentarios de código.
 
 Utiliza estas herramientas y prácticas recomendadas para mejorar tu flujo de trabajo con Git en VS Code y mantener tu proyecto de software organizado y eficiente
+
+## Clase 7: Deshacer Cambios
+
+### Concepto básico
+En Git, es común cometer errores o necesitar deshacer cambios. Afortunadamente, Git ofrece varias formas de revertir cambios, resetear el estado de un archivo y manejar situaciones similares. Estas opciones permiten mantener el historial del proyecto limpio y corregir errores de manera eficiente.
+
+### Reset
+El comando `git reset` permite deshacer cambios en el directorio de trabajo y el área de preparación. Tiene varias opciones que determinan el alcance del reset, como `--soft`, `--mixed` y `--hard`. Estas opciones determinan si los cambios deshechos se mantienen en el área de preparación o se eliminan por completo.
+
+### Revert
+Cuando necesitas deshacer los cambios introducidos por un commit anterior, puedes utilizar `git revert`. Este comando crea un nuevo commit que revierte los cambios introducidos por el commit especificado. Es útil cuando quieres mantener un historial limpio y no deseas reescribir la historia del repositorio.
+
+### Eliminar commits
+A veces, necesitas eliminar completamente un commit del historial. Puedes lograrlo utilizando comandos como `git reset --hard` o `git rebase -i`. Sin embargo, ten en cuenta que reescribir la historia del repositorio puede causar problemas si el repositorio es compartido con otros colaboradores.
+
+## Comandos adicionales
+Además de los comandos básicos, hay otras herramientas y técnicas que puedes utilizar para deshacer cambios en Git:
+
+### Stash
+El comando `git stash` guarda temporalmente los cambios locales sin hacer commit, lo que te permite trabajar en otra tarea. Puedes aplicar estos cambios posteriormente utilizando `git stash apply` o `git stash pop`.
+
+### Cherry-pick
+Cuando solo necesitas aplicar cambios específicos de un commit a tu rama actual, puedes utilizar `git cherry-pick`. Esto te permite seleccionar commits individuales y aplicarlos a tu rama actual.
+
+### Reflog
+El registro de referencia (`reflog`) registra los cambios en el puntero HEAD, lo que te permite recuperar fácilmente commits eliminados o perdidos. Puedes acceder al reflog utilizando `git reflog` y restaurar commits utilizando `git reset --hard HEAD@{<n>}`.
+
+### Recomendaciones
+- Antes de utilizar comandos que reescriben la historia del repositorio, asegúrate de entender las implicaciones y comunica tus acciones a los colaboradores del proyecto.
+- Utiliza herramientas visuales como `gitk` o `git gui` para visualizar el historial del repositorio y comprender mejor los cambios realizados.
