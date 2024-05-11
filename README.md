@@ -20,3 +20,8 @@ Git es un sistema de control de versiones distribuido que facilita el seguiminet
 - `git status`:  Muestra el estado del directorio de trabajo y del área del entorno de ensayo.
 - `git log`: Muestra el historial de commits. Proporciona una lista detallada de todos los commits realizados en el repositorio, incluyendo el autor, la fecha y el mensaje asociado a cada commit.
 - `git diff`: Muestra las diferencias entre versiones. Puedes usar este comando para ver las diferencias entre el directorio de trabajo y el área de preparación, entre el área de preparación y el último commit, o entre dos commits específicos.
+
+## Clase 2: Ramas, Merge y Conflictos
+
+### Concepto básico
+Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o correcciones de errores. Cada rama representa una línea independiente de desarrollo. Merge combina cambios de diferentes ramas, y los conflictos ocurren cuando hay cambios contradictorios que deben resolverse manualmente.
