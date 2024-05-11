@@ -234,6 +234,10 @@ Utiliza estas herramientas y prácticas recomendadas para mejorar tu flujo de tr
 ### Concepto básico
 En Git, es común cometer errores o necesitar deshacer cambios. Afortunadamente, Git ofrece varias formas de revertir cambios, resetear el estado de un archivo y manejar situaciones similares. Estas opciones permiten mantener el historial del proyecto limpio y corregir errores de manera eficiente.
 
+> [!CUIDADO]
+> Estos comandos son destructivos y no destructivos
+
+
 ### Reset
 El comando `git reset` permite deshacer cambios en el directorio de trabajo y el área de preparación. Tiene varias opciones que determinan el alcance del reset, como `--soft`, `--mixed` y `--hard`. Estas opciones determinan si los cambios deshechos se mantienen en el área de preparación o se eliminan por completo.
 
