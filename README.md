@@ -234,8 +234,8 @@ Utiliza estas herramientas y prácticas recomendadas para mejorar tu flujo de tr
 ### Concepto básico
 En Git, es común cometer errores o necesitar deshacer cambios. Afortunadamente, Git ofrece varias formas de revertir cambios, resetear el estado de un archivo y manejar situaciones similares. Estas opciones permiten mantener el historial del proyecto limpio y corregir errores de manera eficiente.
 
-> [!CUIDADO]
-> Estos comandos son destructivos y no destructivos
+[!CUIDADO]
+Estos comandos son destructivos y no destructivos
 
 
 ### Reset
