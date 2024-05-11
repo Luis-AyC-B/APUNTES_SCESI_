@@ -41,12 +41,6 @@ Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o c
 - `git merge --abort`: Cancela el proceso de fusión en caso de conflicto y restaura el estado antes de la fusión.
 - `git merge --no-ff <nombre_rama>`: Realiza un merge "no fast-forward", creando un nuevo commit de merge incluso si Git podría hacerlo automáticamente.
 
-### Uso avanzado
-- `git branch -d <nombre_rama>`: Elimina una rama después de que sus cambios se han fusionado correctamente en otra rama.
-- `git branch -D <nombre_rama>`: Elimina una rama incluso si sus cambios no se han fusionado en otra rama (se pierden los cambios no fusionados).
-- `git merge --abort`: Cancela el proceso de fusión en caso de conflicto y restaura el estado antes de la fusión.
-- `git merge --no-ff <nombre_rama>`: Realiza un merge "no fast-forward", creando un nuevo commit de merge incluso si Git podría hacerlo automáticamente.
-
 ### Estrategias de fusión
 
 [![git-merge-fusion-banner.png](https://i.postimg.cc/13yPrt4X/git-merge-fusion-banner.png)](https://postimg.cc/WhYQ2sGc)
@@ -128,38 +122,6 @@ El proceso de compartir y colaborar en proyectos Git involucra tres acciones fun
   
 - **Squash**: Combina varios commits en uno solo, lo que puede ser útil para agrupar cambios relacionados y mantener un historial de commits más conciso.
 
-## Clase 4: Push, Pull y Pull Request
-
-### **Concepto básico**
-El proceso de compartir y colaborar en proyectos Git involucra tres acciones fundamentales:
-
-- **Push**: Este comando envía tus cambios locales al repositorio remoto, permitiendo que otros miembros del equipo accedan a tus contribuciones.
-  
-- **Pull**: Utilizado para obtener y fusionar los cambios desde el repositorio remoto a tu repositorio local, manteniendo tu copia del proyecto actualizada con la última versión.
-
-- **Pull Request**: Una pull request es una propuesta de cambios que deseas integrar en el repositorio principal. Esta función es característica de plataformas de alojamiento de repositorios como GitHub, GitLab o Bitbucket. Facilita la revisión y discusión de cambios antes de fusionarlos en el repositorio principal.
-
-### **Comandos**
-- `git push`: Envía los cambios realizados en tu repositorio local al repositorio remoto.
-  
-- `git pull`: Obtiene los cambios del repositorio remoto y los fusiona automáticamente en tu repositorio local.
-  
-### **Flujo de trabajo sugerido**
-1. **Crear una rama**: Antes de empezar a trabajar en una nueva funcionalidad, crea una rama nueva utilizando `git branch <nombre_rama>` y cámbiate a ella con `git checkout <nombre_rama>`.
-  
-2. **Realizar cambios**: Haz tus cambios en la rama creada y realiza commits regulares para mantener un historial claro de tus modificaciones.
-  
-3. **Sincronizar con el repositorio remoto**: Antes de enviar tus cambios, asegúrate de estar actualizado con el repositorio remoto utilizando `git pull`.
-  
-4. **Enviar tus cambios**: Utiliza `git push` para enviar tus cambios al repositorio remoto. Si estás trabajando en una rama diferente de la principal, puedes hacer un pull request para que tus cambios sean revisados antes de fusionarlos.
-  
-5. **Fusionar cambios**: Una vez que tus cambios han sido revisados y aprobados en el pull request, puedes fusionarlos en la rama principal utilizando la interfaz de la plataforma de alojamiento del repositorio o el comando `git merge`.
-
-### **Extras**
-- **Rebase**: Un método alternativo para integrar cambios que altera la historia de commits. Puede ser útil para mantener un historial de commits más limpio y lineal.
-  
-- **Squash**: Combina varios commits en uno solo, lo que puede ser útil para agrupar cambios relacionados y mantener un historial de commits más conciso.
-
 ## Clase 5: Gitflow
 
 [![2-git-flow-model.png](https://i.postimg.cc/MHWHMDkZ/2-git-flow-model.png)](https://postimg.cc/xJ4nBLTB)
@@ -189,8 +151,9 @@ Gitflow se integra bien con diversas herramientas y servicios, incluyendo:
 - **GitKraken:** Ofrece una interfaz gráfica intuitiva que facilita la gestión de ramas y fusión según el modelo Gitflow.
 - **GitHub Actions:** Permite automatizar flujos de trabajo basados en eventos, como despliegues automáticos después de la finalización de una rama de release.
 
-### Conclusiones
-Gitflow proporciona una estructura organizativa sólida y predecible para proyectos de desarrollo de software. Al seguir este modelo, los equipos pueden gestionar eficazmente el flujo de trabajo, colaborar de manera efectiva y entregar software de alta calidad de manera constante.
+
+> [!NOTE]
+>Gitflow proporciona una estructura organizativa sólida y predecible para proyectos de desarrollo de software. Al seguir este modelo, los equipos pueden gestionar eficazmente el flujo de trabajo, colaborar de manera efectiva y entregar software de alta calidad de manera constante.
 
 ## Clase 6: Buenas Prácticas en Git
 
@@ -199,23 +162,25 @@ Gitflow proporciona una estructura organizativa sólida y predecible para proyec
 ### Concepto básico
 En esta clase aprenderemos sobre las prácticas recomendadas para el uso eficiente y seguro de Git. Estas prácticas son fundamentales para mantener la integridad y la colaboración en un proyecto de software. Algunas de estas prácticas incluyen:
 
-- **Escribir mensajes de commit claros:** Los mensajes de commit deben ser descriptivos y concisos, explicando de manera clara los cambios introducidos en el commit. Esto facilita la comprensión de los cambios realizados y su seguimiento en el historial del repositorio.
-
-- **Mantener ramas limpias:** Es importante mantener un número limitado de ramas en el repositorio y eliminar aquellas que ya no son necesarias. Las ramas deben tener nombres descriptivos y reflejar claramente su propósito, evitando ramas ambiguas o redundantes.
-
-- **Documentar cambios importantes:** Los cambios importantes en el código deben ser debidamente documentados, ya sea mediante comentarios en el código, actualizaciones en la documentación del proyecto o mediante registros en el sistema de seguimiento de problemas. Esto ayuda a mantener a todos los miembros del equipo informados sobre los cambios realizados y su impacto en el proyecto.
+> [!TIP]
+> .- **Escribir mensajes de commit claros:** Los mensajes de commit deben ser descriptivos y concisos, explicando de manera clara los cambios introducidos en el commit. Esto facilita la comprensión de los cambios realizados y su seguimiento en el historial del repositorio.
+>
+>- **Mantener ramas limpias:** Es importante mantener un número limitado de ramas en el repositorio y eliminar aquellas que ya no son necesarias. Las ramas deben tener nombres descriptivos y reflejar claramente su propósito, evitando ramas ambiguas o redundantes.
+>
+>- **Documentar cambios importantes:** Los cambios importantes en el código deben ser debidamente documentados, ya sea mediante comentarios en el código, actualizaciones en la documentación del proyecto o mediante registros en el sistema de seguimiento de problemas. Esto ayuda a mantener a todos los miembros del equipo informados sobre los cambios realizados y su impacto en el proyecto.
 
 ### Recomendaciones adicionales
 
-Además de las prácticas básicas mencionadas anteriormente, aquí hay algunas recomendaciones adicionales para mejorar la gestión de tu proyecto con Git:
-
-- **Utilizar branches por características:** En lugar de trabajar directamente en la rama principal del proyecto, considera crear branches separadas para cada nueva característica o corrección de errores. Esto facilita el seguimiento de los cambios y permite una mayor colaboración entre los miembros del equipo.
-
-- **Realizar revisión de código:** Antes de fusionar cambios en la rama principal, es recomendable realizar una revisión de código por parte de otros miembros del equipo. Esto ayuda a identificar posibles errores o mejoras en el código y garantiza la calidad del proyecto.
-
-- **Seguir convenciones de nomenclatura:** Establece convenciones de nomenclatura para los branches, commits y otros elementos del repositorio. Esto facilita la comprensión del proyecto y ayuda a mantener una estructura coherente en el repositorio.
-
-- **Automatizar tareas repetitivas:** Utiliza herramientas de automatización o scripts para realizar tareas repetitivas, como pruebas de integración, construcción de artefactos o despliegue de aplicaciones. Esto ahorra tiempo y reduce el riesgo de errores humanos.
+> [!TIP]
+> .Además de las prácticas básicas mencionadas anteriormente, aquí hay algunas recomendaciones adicionales para mejorar la gestión de tu proyecto con Git:
+>
+>- **Utilizar branches por características:** En lugar de trabajar directamente en la rama principal del proyecto, considera crear branches separadas para cada nueva característica o corrección de errores. Esto facilita el seguimiento de los cambios y permite una mayor colaboración entre los miembros del equipo.
+>
+>- **Realizar revisión de código:** Antes de fusionar cambios en la rama principal, es recomendable realizar una revisión de código por parte de otros miembros del equipo. Esto ayuda a identificar posibles errores o mejoras en el código y garantiza la calidad del proyecto.
+>
+>- **Seguir convenciones de nomenclatura:** Establece convenciones de nomenclatura para los branches, commits y otros elementos del repositorio. Esto facilita la comprensión del proyecto y ayuda a mantener una estructura coherente en el repositorio.
+>
+>- **Automatizar tareas repetitivas:** Utiliza herramientas de automatización o scripts para realizar tareas repetitivas, como pruebas de integración, construcción de artefactos o despliegue de aplicaciones. Esto ahorra tiempo y reduce el riesgo de errores humanos.
 
 ### Implementación en VS Code
 
@@ -235,8 +200,6 @@ Utiliza estas herramientas y prácticas recomendadas para mejorar tu flujo de tr
 En Git, es común cometer errores o necesitar deshacer cambios. Afortunadamente, Git ofrece varias formas de revertir cambios, resetear el estado de un archivo y manejar situaciones similares. Estas opciones permiten mantener el historial del proyecto limpio y corregir errores de manera eficiente.
 
 > [!CAUTION]
-> Estos comandos son destructivos y no destructivos
-> [!CUIDADO]
 > Estos comandos son destructivos y no destructivos
 
 ### Reset
@@ -283,4 +246,5 @@ Git ofrece características avanzadas que pueden mejorar significativamente la e
   
 - `git config --global alias.<nombre_alias> "<comando>"`: Crea un alias global para un comando de Git. Esto es útil para definir atajos personalizados que se aplicarán en todos los repositorios.
 
-- Además de los comandos mencionados, los trucos específicos pueden variar según las necesidades del usuario y las particularidades del proyecto. Algunos ejemplos comunes incluyen la optimización de la configuración de Git, la automatización de tareas repetitivas mediante scripts personalizados, o el uso de extensiones de terceros para ampliar las capacidades de Git.
+> [!IMPORTANT]
+>Los comandos mencionados, los trucos específicos pueden variar según las necesidades del usuario y las particularidades del proyecto. Algunos ejemplos comunes incluyen la optimización de la configuración de Git, la automatización de tareas repetitivas mediante scripts personalizados, o el uso de extensiones de terceros para ampliar las capacidades de Git.
