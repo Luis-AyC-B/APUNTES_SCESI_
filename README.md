@@ -178,3 +178,38 @@ Gitflow se integra bien con diversas herramientas y servicios, incluyendo:
 
 ### Conclusiones
 Gitflow proporciona una estructura organizativa sólida y predecible para proyectos de desarrollo de software. Al seguir este modelo, los equipos pueden gestionar eficazmente el flujo de trabajo, colaborar de manera efectiva y entregar software de alta calidad de manera constante.
+
+## Clase 6: Buenas Prácticas en Git
+
+### Concepto básico
+En esta clase aprenderemos sobre las prácticas recomendadas para el uso eficiente y seguro de Git. Estas prácticas son fundamentales para mantener la integridad y la colaboración en un proyecto de software. Algunas de estas prácticas incluyen:
+
+- **Escribir mensajes de commit claros:** Los mensajes de commit deben ser descriptivos y concisos, explicando de manera clara los cambios introducidos en el commit. Esto facilita la comprensión de los cambios realizados y su seguimiento en el historial del repositorio.
+
+- **Mantener ramas limpias:** Es importante mantener un número limitado de ramas en el repositorio y eliminar aquellas que ya no son necesarias. Las ramas deben tener nombres descriptivos y reflejar claramente su propósito, evitando ramas ambiguas o redundantes.
+
+- **Documentar cambios importantes:** Los cambios importantes en el código deben ser debidamente documentados, ya sea mediante comentarios en el código, actualizaciones en la documentación del proyecto o mediante registros en el sistema de seguimiento de problemas. Esto ayuda a mantener a todos los miembros del equipo informados sobre los cambios realizados y su impacto en el proyecto.
+
+### Recomendaciones adicionales
+
+Además de las prácticas básicas mencionadas anteriormente, aquí hay algunas recomendaciones adicionales para mejorar la gestión de tu proyecto con Git:
+
+- **Utilizar branches por características:** En lugar de trabajar directamente en la rama principal del proyecto, considera crear branches separadas para cada nueva característica o corrección de errores. Esto facilita el seguimiento de los cambios y permite una mayor colaboración entre los miembros del equipo.
+
+- **Realizar revisión de código:** Antes de fusionar cambios en la rama principal, es recomendable realizar una revisión de código por parte de otros miembros del equipo. Esto ayuda a identificar posibles errores o mejoras en el código y garantiza la calidad del proyecto.
+
+- **Seguir convenciones de nomenclatura:** Establece convenciones de nomenclatura para los branches, commits y otros elementos del repositorio. Esto facilita la comprensión del proyecto y ayuda a mantener una estructura coherente en el repositorio.
+
+- **Automatizar tareas repetitivas:** Utiliza herramientas de automatización o scripts para realizar tareas repetitivas, como pruebas de integración, construcción de artefactos o despliegue de aplicaciones. Esto ahorra tiempo y reduce el riesgo de errores humanos.
+
+### Implementación en VS Code
+
+Puedes seguir estas prácticas en tu flujo de trabajo de Git directamente desde VS Code. Utiliza las extensiones disponibles en el marketplace de VS Code para mejorar la integración de Git en tu entorno de desarrollo. Algunas extensiones útiles incluyen:
+
+- [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens): Proporciona una integración avanzada de Git en VS Code, permitiendo ver la autoría de líneas de código, historial de cambios, entre otros.
+
+- [Git Graph](https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph): Muestra un gráfico visual de las ramas y commits en tu repositorio, facilitando la comprensión de la estructura del proyecto.
+
+- [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker): Ayuda a detectar errores de ortografía en tus mensajes de commit y comentarios de código.
+
+Utiliza estas herramientas y prácticas recomendadas para mejorar tu flujo de trabajo con Git en VS Code y mantener tu proyecto de software organizado y eficiente
