@@ -25,3 +25,14 @@ Git es un sistema de control de versiones distribuido que facilita el seguiminet
 
 ### Concepto básico
 Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o correcciones de errores. Cada rama representa una línea independiente de desarrollo. Merge combina cambios de diferentes ramas, y los conflictos ocurren cuando hay cambios contradictorios que deben resolverse manualmente.
+
+### Comandos
+- `git branch <nombre_rama>`: Crea una nueva rama con el nombre especificado.
+- `git checkout <nombre_rama>`: Cambia a una rama específica.
+- `git merge <nombre_rama>`: Combina los cambios de una rama en otra. Esto fusiona los cambios de la rama especificada en la rama actual. Si hay conflictos, Git pausará el proceso de fusión y requerirá que los resuelvas manualmente.
+
+### Uso avanzado
+- `git branch -d <nombre_rama>`: Elimina una rama después de que sus cambios se han fusionado correctamente en otra rama.
+- `git branch -D <nombre_rama>`: Elimina una rama incluso si sus cambios no se han fusionado en otra rama (se pierden los cambios no fusionados).
+- `git merge --abort`: Cancela el proceso de fusión en caso de conflicto y restaura el estado antes de la fusión.
+- `git merge --no-ff <nombre_rama>`: Realiza un merge "no fast-forward", creando un nuevo commit de merge incluso si Git podría hacerlo automáticamente.
