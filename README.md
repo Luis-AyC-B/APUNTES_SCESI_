@@ -52,3 +52,35 @@ Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o c
 - [Documentación oficial de Git](https://git-scm.com/doc)
 - [Tutorial de ramas en Git](https://www.atlassian.com/git/tutorials/using-branches)
 - [Resolución de conflictos en Git](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/merge-conflicts)
+
+## Clase 3: GitHub
+
+### Concepto básico
+GitHub es una plataforma de alojamiento de repositorios Git en la nube, que facilita la colaboración en proyectos de código abierto y privados. Permite a los desarrolladores trabajar juntos en proyectos de software, gestionar versiones de código, realizar seguimiento de problemas y solicitar características nuevas, todo de forma colaborativa.
+
+Además de alojar repositorios Git, GitHub ofrece una variedad de herramientas y servicios adicionales, como integración continua, seguimiento de problemas, wikis de proyectos y soporte para documentación técnica.
+
+### Crear un repositorio en GitHub
+Una de las tareas básicas en GitHub es la creación de un nuevo repositorio. Este proceso se puede realizar de la siguiente manera:
+
+1. Inicia sesión en tu cuenta de GitHub.
+2. En la esquina superior derecha de la página, haz clic en el botón "+" y selecciona "Nuevo repositorio".
+3. Completa el nombre y la descripción de tu repositorio, así como otras opciones como la visibilidad (público o privado) y el archivo README.
+4. Haz clic en el botón "Crear repositorio".
+
+### Otras funcionalidades de GitHub
+Además de alojar repositorios, GitHub ofrece una amplia gama de funcionalidades que pueden mejorar la colaboración y la gestión de proyectos:
+
+- **Seguimiento de problemas:** GitHub proporciona un sistema de seguimiento de problemas que permite a los usuarios reportar errores, solicitar características y discutir ideas.
+- **Pull requests:** Los pull requests son solicitudes para incluir cambios en un repositorio. Permiten a los colaboradores revisar, comentar y aprobar los cambios propuestos antes de fusionarlos con la rama principal del proyecto.
+- **Integración continua:** GitHub Actions permite automatizar flujos de trabajo, como pruebas unitarias, construcción de proyectos y despliegue, directamente desde el repositorio de GitHub.
+- **Wikis de proyectos:** GitHub ofrece la posibilidad de crear wikis para documentar el proyecto, proporcionando un espacio para compartir información sobre la arquitectura, las mejores prácticas y los procesos de desarrollo.
+- **Gestión de proyectos:** GitHub Projects permite crear tableros kanban para organizar y priorizar tareas, así como realizar un seguimiento del progreso del proyecto.
+
+### Comandos útiles de Git para trabajar con GitHub
+Aunque GitHub es una plataforma en sí misma, se utiliza en conjunto con Git para gestionar repositorios. Algunos comandos útiles de Git para trabajar con GitHub incluyen:
+
+- `git clone <url_del_repositorio>`: Clona un repositorio de GitHub en tu máquina local.
+- `git remote add origin <url_del_repositorio>`: Conecta un repositorio local a un repositorio remoto en GitHub.
+- `git push origin <nombre_rama>`: Envía los cambios de una rama local a un repositorio remoto en GitHub.
+- `git pull origin <nombre_rama>`: Obtiene los cambios de un repositorio remoto en GitHub y los fusiona con la rama local.
