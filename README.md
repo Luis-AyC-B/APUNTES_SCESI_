@@ -3,6 +3,8 @@
 ### CONCEPTO:
 Git es un sistema de control de versiones distribuido que facilita el seguimineto de cambios en archivos y la coordinacion del trabajo en equipo en proyectos de software.
 
+![IMAGE GIT](https://www.google.com/url?sa=i&url=https%3A%2F%2Fvabadus.es%2Fblog%2Fotros%2Ftrabajando-con-git-eliminar-un-tag-remoto&psig=AOvVaw2hIBBqaUiGYIWdWL_xEagQ&ust=1715501330034000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCJCMpsqShYYDFQAAAAAdAAAAABAE)
+
 ### Comandos:
 - `git init`: En un directorio inicializa el repositorio Git.
 - `git add <archivo>`: Agrega un archivo a nuestra área de preparación.
