@@ -36,3 +36,19 @@ Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o c
 - `git branch -D <nombre_rama>`: Elimina una rama incluso si sus cambios no se han fusionado en otra rama (se pierden los cambios no fusionados).
 - `git merge --abort`: Cancela el proceso de fusión en caso de conflicto y restaura el estado antes de la fusión.
 - `git merge --no-ff <nombre_rama>`: Realiza un merge "no fast-forward", creando un nuevo commit de merge incluso si Git podría hacerlo automáticamente.
+
+### Uso avanzado
+- `git branch -d <nombre_rama>`: Elimina una rama después de que sus cambios se han fusionado correctamente en otra rama.
+- `git branch -D <nombre_rama>`: Elimina una rama incluso si sus cambios no se han fusionado en otra rama (se pierden los cambios no fusionados).
+- `git merge --abort`: Cancela el proceso de fusión en caso de conflicto y restaura el estado antes de la fusión.
+- `git merge --no-ff <nombre_rama>`: Realiza un merge "no fast-forward", creando un nuevo commit de merge incluso si Git podría hacerlo automáticamente.
+
+### Estrategias de fusión
+- **Fusión Regular (Fast-forward)**: Git avanza la rama actual para fusionarla con la rama especificada si no hay conflictos.
+- **Fusión de "Merge commit"**: Git crea un nuevo commit de fusión para combinar cambios, incluso si no hay conflictos.
+- **Resolución de conflictos**: Cuando hay conflictos, Git requiere intervención manual para resolverlos antes de completar la fusión.
+
+### Recursos adicionales
+- [Documentación oficial de Git](https://git-scm.com/doc)
+- [Tutorial de ramas en Git](https://www.atlassian.com/git/tutorials/using-branches)
+- [Resolución de conflictos en Git](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/merge-conflicts)
