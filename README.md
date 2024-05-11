@@ -25,6 +25,8 @@ Git es un sistema de control de versiones distribuido que facilita el seguiminet
 
 ## Clase 2: Ramas, Merge y Conflictos
 
+[![images.jpg](https://i.postimg.cc/NFVDfLV4/images.jpg)](https://postimg.cc/D4rLxf7J)
+
 ### Concepto básico
 Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o correcciones de errores. Cada rama representa una línea independiente de desarrollo. Merge combina cambios de diferentes ramas, y los conflictos ocurren cuando hay cambios contradictorios que deben resolverse manualmente.
 
@@ -46,6 +48,9 @@ Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o c
 - `git merge --no-ff <nombre_rama>`: Realiza un merge "no fast-forward", creando un nuevo commit de merge incluso si Git podría hacerlo automáticamente.
 
 ### Estrategias de fusión
+
+[![git-merge-fusion-banner.png](https://i.postimg.cc/13yPrt4X/git-merge-fusion-banner.png)](https://postimg.cc/WhYQ2sGc)
+
 - **Fusión Regular (Fast-forward)**: Git avanza la rama actual para fusionarla con la rama especificada si no hay conflictos.
 - **Fusión de "Merge commit"**: Git crea un nuevo commit de fusión para combinar cambios, incluso si no hay conflictos.
 - **Resolución de conflictos**: Cuando hay conflictos, Git requiere intervención manual para resolverlos antes de completar la fusión.
@@ -56,6 +61,8 @@ Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o c
 - [Resolución de conflictos en Git](https://www.git-tower.com/learn/git/ebook/en/command-line/advanced-topics/merge-conflicts)
 
 ## Clase 3: GitHub
+
+[![images.png](https://i.postimg.cc/rpFr3MZF/images.png)](https://postimg.cc/jDm2J0rG)
 
 ### Concepto básico
 GitHub es una plataforma de alojamiento de repositorios Git en la nube, que facilita la colaboración en proyectos de código abierto y privados. Permite a los desarrolladores trabajar juntos en proyectos de software, gestionar versiones de código, realizar seguimiento de problemas y solicitar características nuevas, todo de forma colaborativa.
@@ -88,6 +95,8 @@ Aunque GitHub es una plataforma en sí misma, se utiliza en conjunto con Git par
 - `git pull origin <nombre_rama>`: Obtiene los cambios de un repositorio remoto en GitHub y los fusiona con la rama local.
 
 ## Clase 4: Push, Pull y Pull Request
+
+[![1676834249926.jpg](https://i.postimg.cc/wMxZstwY/1676834249926.jpg)](https://postimg.cc/MM4dCGk9)
 
 ### **Concepto básico**
 El proceso de compartir y colaborar en proyectos Git involucra tres acciones fundamentales:
@@ -153,6 +162,8 @@ El proceso de compartir y colaborar en proyectos Git involucra tres acciones fun
 
 ## Clase 5: Gitflow
 
+[![2-git-flow-model.png](https://i.postimg.cc/MHWHMDkZ/2-git-flow-model.png)](https://postimg.cc/xJ4nBLTB)
+
 ### Concepto básico
 Gitflow es un flujo de trabajo para Git que define una estructura de ramas y reglas para facilitar el desarrollo colaborativo en proyectos de software. Propuesto por Vincent Driessen en 2010, Gitflow se ha convertido en un modelo popular para organizar el flujo de trabajo en equipos de desarrollo.
 
@@ -182,6 +193,8 @@ Gitflow se integra bien con diversas herramientas y servicios, incluyendo:
 Gitflow proporciona una estructura organizativa sólida y predecible para proyectos de desarrollo de software. Al seguir este modelo, los equipos pueden gestionar eficazmente el flujo de trabajo, colaborar de manera efectiva y entregar software de alta calidad de manera constante.
 
 ## Clase 6: Buenas Prácticas en Git
+
+[![images-1.png](https://i.postimg.cc/Z5kkwqRp/images-1.png)](https://postimg.cc/hf03jcVt)
 
 ### Concepto básico
 En esta clase aprenderemos sobre las prácticas recomendadas para el uso eficiente y seguro de Git. Estas prácticas son fundamentales para mantener la integridad y la colaboración en un proyecto de software. Algunas de estas prácticas incluyen:
@@ -247,6 +260,8 @@ El registro de referencia (`reflog`) registra los cambios en el puntero HEAD, lo
 - Utiliza herramientas visuales como `gitk` o `git gui` para visualizar el historial del repositorio y comprender mejor los cambios realizados.
 
 ## Clase 8: Hooks, Alias y Trucos de Git
+
+[![git-hooks-thumbnail.webp](https://i.postimg.cc/4NvCFgh0/git-hooks-thumbnail.webp)](https://postimg.cc/TpPHpB0j)
 
 ### Concepto básico:
 Git ofrece características avanzadas que pueden mejorar significativamente la eficiencia y la automatización del flujo de trabajo. Algunas de estas características incluyen:
