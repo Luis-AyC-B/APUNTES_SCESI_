@@ -2,8 +2,6 @@
 ## Clase 1 :Introducción a Git
 ### CONCEPTO:
 
-### CONCEPTO`#0969DA`
-
 Git es un sistema de control de versiones distribuido que facilita el seguimineto de cambios en archivos y la coordinacion del trabajo en equipo en proyectos de software.
 
 [![5c9deef127c7d783462103.png](https://i.postimg.cc/SQtqmJYB/5c9deef127c7d783462103.png)](https://postimg.cc/23vgwjwG)
@@ -14,11 +12,12 @@ Git es un sistema de control de versiones distribuido que facilita el seguiminet
 - `git commit -m "Mensaje"`: Nos ayuda a guardar  los cambios en un repositorio (punto de guardado).
 
 ## States y Commits
-### Concepto básico:
 
-- *Directorio de trabajo:* Es el espacio donde trabajamos con nuestros archivos y se realiza cambios.
-- *Área de preparación (Staging Area):* Es donde seleccionas los cambios que quieres incluir en tu próximo commit.
-- *Repositorio:* Es un almacenamiento virtual de tu proyecto. Te permite guardar versiones del código a las que puedes acceder cuando lo necesites.
+
+> [!NOTE]
+>- *Directorio de trabajo:* Es el espacio donde trabajamos con nuestros archivos y se realiza cambios.
+>- *Área de preparación (Staging Area):* Es donde seleccionas los cambios que quieres incluir en tu próximo commit.
+>- *Repositorio:* Es un almacenamiento virtual de tu proyecto. Te permite guardar versiones del código a las que puedes acceder cuando lo necesites.
 
 ### Comandos:
 
@@ -30,8 +29,8 @@ Git es un sistema de control de versiones distribuido que facilita el seguiminet
 
 [![images.jpg](https://i.postimg.cc/NFVDfLV4/images.jpg)](https://postimg.cc/D4rLxf7J)
 
-### Concepto básico
-Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o correcciones de errores. Cada rama representa una línea independiente de desarrollo. Merge combina cambios de diferentes ramas, y los conflictos ocurren cuando hay cambios contradictorios que deben resolverse manualmente.
+> [!NOTE]
+>En Git, las ramas permiten trabajar en paralelo en diferentes funcionalidades o correcciones de errores. Cada rama representa una línea independiente de desarrollo. Cuando se combinan cambios de diferentes ramas, se realiza un “merge”. Sin embargo, pueden surgir conflictos cuando hay cambios contradictorios que deben resolverse manu
 
 ### Comandos
 - `git branch <nombre_rama>`: Crea una nueva rama con el nombre especificado.
@@ -61,13 +60,11 @@ Las ramas en Git permiten trabajar en paralelo en diferentes funcionalidades o c
 
 [![images.png](https://i.postimg.cc/rpFr3MZF/images.png)](https://postimg.cc/jDm2J0rG)
 
-### Concepto básico
-GitHub es una plataforma de alojamiento de repositorios Git en la nube, que facilita la colaboración en proyectos de código abierto y privados. Permite a los desarrolladores trabajar juntos en proyectos de software, gestionar versiones de código, realizar seguimiento de problemas y solicitar características nuevas, todo de forma colaborativa.
-
-Además de alojar repositorios Git, GitHub ofrece una variedad de herramientas y servicios adicionales, como integración continua, seguimiento de problemas, wikis de proyectos y soporte para documentación técnica.
+> [!NOTE]
+>GitHub no es solo una plataforma para el control de versiones y la colaboración; también es un centro para compartir código y una plataforma de redes sociales para desarrolladores. Sirve como un repositorio centralizado para el código fuente, lo que facilita compartir y colaborar en proyectos de software.
 
 ### Crear un repositorio en GitHub
-Una de las tareas básicas en GitHub es la creación de un nuevo repositorio. Este proceso se puede realizar de la siguiente manera:
+Siguiendo estos pasos podemos crear un repositorio:
 
 1. Inicia sesión en tu cuenta de GitHub.
 2. En la esquina superior derecha de la página, haz clic en el botón "+" y selecciona "Nuevo repositorio".
@@ -95,14 +92,14 @@ Aunque GitHub es una plataforma en sí misma, se utiliza en conjunto con Git par
 
 [![1676834249926.jpg](https://i.postimg.cc/wMxZstwY/1676834249926.jpg)](https://postimg.cc/MM4dCGk9)
 
-### **Concepto básico**
-El proceso de compartir y colaborar en proyectos Git involucra tres acciones fundamentales:
+> [!NOTE]
+>El proceso de compartir y colaborar en proyectos Git involucra tres acciones fundamentales:
 
 - **Push**: Este comando envía tus cambios locales al repositorio remoto, permitiendo que otros miembros del equipo accedan a tus contribuciones.
   
 - **Pull**: Utilizado para obtener y fusionar los cambios desde el repositorio remoto a tu repositorio local, manteniendo tu copia del proyecto actualizada con la última versión.
 
-- **Pull Request**: Una pull request es una propuesta de cambios que deseas integrar en el repositorio principal. Esta función es característica de plataformas de alojamiento de repositorios como GitHub, GitLab o Bitbucket. Facilita la revisión y discusión de cambios antes de fusionarlos en el repositorio principal.
+- **Pull Request**: Una Pull Request (PR) es una solicitud para incorporar cambios en un repositorio de código fuente.
 
 ### **Comandos**
 - `git push`: Envía los cambios realizados en tu repositorio local al repositorio remoto.
@@ -129,8 +126,9 @@ El proceso de compartir y colaborar en proyectos Git involucra tres acciones fun
 
 [![2-git-flow-model.png](https://i.postimg.cc/MHWHMDkZ/2-git-flow-model.png)](https://postimg.cc/xJ4nBLTB)
 
-### Concepto básico
-Gitflow es un flujo de trabajo para Git que define una estructura de ramas y reglas para facilitar el desarrollo colaborativo en proyectos de software. Propuesto por Vincent Driessen en 2010, Gitflow se ha convertido en un modelo popular para organizar el flujo de trabajo en equipos de desarrollo.
+
+> [!NOTE]
+>Gitflow es un modelo alternativo de creación de ramas en Git que se utiliza para gestionar el desarrollo colaborativo en proyectos de software. Fue propuesto por Vincent Driessen en 2010 y se ha convertido en un enfoque popular para organizar el flujo de trabajo en equipos de desarrollo.
 
 Gitflow se basa en la idea de tener dos ramas principales permanentes: `master` y `develop`. La rama `master` contiene el código estable y se utiliza para producir versiones de producción, mientras que la rama `develop` es la rama base para el desarrollo en curso. Además, Gitflow define varias ramas secundarias para características, versiones, hotfixes y lanzamientos.
 
@@ -155,15 +153,16 @@ Gitflow se integra bien con diversas herramientas y servicios, incluyendo:
 - **GitHub Actions:** Permite automatizar flujos de trabajo basados en eventos, como despliegues automáticos después de la finalización de una rama de release.
 
 
-> [!NOTE]
+> [!IMPORTANT]
 >Gitflow proporciona una estructura organizativa sólida y predecible para proyectos de desarrollo de software. Al seguir este modelo, los equipos pueden gestionar eficazmente el flujo de trabajo, colaborar de manera efectiva y entregar software de alta calidad de manera constante.
 
 ## Clase 6: Buenas Prácticas en Git
 
 [![images-1.png](https://i.postimg.cc/Z5kkwqRp/images-1.png)](https://postimg.cc/hf03jcVt)
 
-### Concepto básico
-En esta clase aprenderemos sobre las prácticas recomendadas para el uso eficiente y seguro de Git. Estas prácticas son fundamentales para mantener la integridad y la colaboración en un proyecto de software. Algunas de estas prácticas incluyen:
+
+> [!NOTE]
+>En esta clase aprenderemos sobre las prácticas recomendadas para el uso eficiente y seguro de Git. Estas prácticas son fundamentales para mantener la integridad y la colaboración en un proyecto de software. Algunas de estas prácticas incluyen:
 
 > [!TIP]
 > - **Escribir mensajes de commit claros:** Los mensajes de commit deben ser descriptivos y concisos, explicando de manera clara los cambios introducidos en el commit. Esto facilita la comprensión de los cambios realizados y su seguimiento en el historial del repositorio.
@@ -199,8 +198,8 @@ Utiliza estas herramientas y prácticas recomendadas para mejorar tu flujo de tr
 
 ## Clase 7: Deshacer Cambios
 
-### Concepto básico
-En Git, es común cometer errores o necesitar deshacer cambios. Afortunadamente, Git ofrece varias formas de revertir cambios, resetear el estado de un archivo y manejar situaciones similares. Estas opciones permiten mantener el historial del proyecto limpio y corregir errores de manera eficiente.
+> [!NOTE]
+>Git te brinda herramientas poderosas para manejar errores y deshacer cambios de manera eficiente. Si cometes errores, no te preocupes, siempre hay una forma de corregirlos.
 
 > [!CAUTION]
 > Estos comandos son destructivos y no destructivos
@@ -234,8 +233,8 @@ El registro de referencia (`reflog`) registra los cambios en el puntero HEAD, lo
 
 [![git-hooks-thumbnail.webp](https://i.postimg.cc/4NvCFgh0/git-hooks-thumbnail.webp)](https://postimg.cc/TpPHpB0j)
 
-### Concepto básico:
-Git ofrece características avanzadas que pueden mejorar significativamente la eficiencia y la automatización del flujo de trabajo. Algunas de estas características incluyen:
+> [!NOTE]
+>Git ofrece características avanzadas que pueden mejorar significativamente la eficiencia y la automatización del flujo de trabajo. Algunas de estas características incluyen:
 
 - **Hooks:** Son scripts que se ejecutan automáticamente en respuesta a ciertos eventos en Git, como pre-commit (antes de confirmar cambios) o post-merge (después de fusionar ramas). Los hooks permiten personalizar y automatizar tareas específicas del proyecto, como ejecutar pruebas unitarias o notificar a los miembros del equipo sobre cambios importantes.
 
