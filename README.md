@@ -84,3 +84,36 @@ Aunque GitHub es una plataforma en sí misma, se utiliza en conjunto con Git par
 - `git remote add origin <url_del_repositorio>`: Conecta un repositorio local a un repositorio remoto en GitHub.
 - `git push origin <nombre_rama>`: Envía los cambios de una rama local a un repositorio remoto en GitHub.
 - `git pull origin <nombre_rama>`: Obtiene los cambios de un repositorio remoto en GitHub y los fusiona con la rama local.
+
+## Clase 4: Push, Pull y Pull Request
+
+### **Concepto básico**
+El proceso de compartir y colaborar en proyectos Git involucra tres acciones fundamentales:
+
+- **Push**: Este comando envía tus cambios locales al repositorio remoto, permitiendo que otros miembros del equipo accedan a tus contribuciones.
+  
+- **Pull**: Utilizado para obtener y fusionar los cambios desde el repositorio remoto a tu repositorio local, manteniendo tu copia del proyecto actualizada con la última versión.
+
+- **Pull Request**: Una pull request es una propuesta de cambios que deseas integrar en el repositorio principal. Esta función es característica de plataformas de alojamiento de repositorios como GitHub, GitLab o Bitbucket. Facilita la revisión y discusión de cambios antes de fusionarlos en el repositorio principal.
+
+### **Comandos**
+- `git push`: Envía los cambios realizados en tu repositorio local al repositorio remoto.
+  
+- `git pull`: Obtiene los cambios del repositorio remoto y los fusiona automáticamente en tu repositorio local.
+  
+### **Flujo de trabajo sugerido**
+1. **Crear una rama**: Antes de empezar a trabajar en una nueva funcionalidad, crea una rama nueva utilizando `git branch <nombre_rama>` y cámbiate a ella con `git checkout <nombre_rama>`.
+  
+2. **Realizar cambios**: Haz tus cambios en la rama creada y realiza commits regulares para mantener un historial claro de tus modificaciones.
+  
+3. **Sincronizar con el repositorio remoto**: Antes de enviar tus cambios, asegúrate de estar actualizado con el repositorio remoto utilizando `git pull`.
+  
+4. **Enviar tus cambios**: Utiliza `git push` para enviar tus cambios al repositorio remoto. Si estás trabajando en una rama diferente de la principal, puedes hacer un pull request para que tus cambios sean revisados antes de fusionarlos.
+  
+5. **Fusionar cambios**: Una vez que tus cambios han sido revisados y aprobados en el pull request, puedes fusionarlos en la rama principal utilizando la interfaz de la plataforma de alojamiento del repositorio o el comando `git merge`.
+
+### **Extras**
+- **Rebase**: Un método alternativo para integrar cambios que altera la historia de commits. Puede ser útil para mantener un historial de commits más limpio y lineal.
+  
+- **Squash**: Combina varios commits en uno solo, lo que puede ser útil para agrupar cambios relacionados y mantener un historial de commits más conciso.
+
