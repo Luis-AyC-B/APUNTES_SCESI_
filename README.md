@@ -72,13 +72,13 @@ Siguiendo estos pasos podemos crear un repositorio:
 4. Haz clic en el botón "Crear repositorio".
 
 ### Otras funcionalidades de GitHub
-Además de alojar repositorios, GitHub ofrece una amplia gama de funcionalidades que pueden mejorar la colaboración y la gestión de proyectos:
 
-- **Seguimiento de problemas:** GitHub proporciona un sistema de seguimiento de problemas que permite a los usuarios reportar errores, solicitar características y discutir ideas.
-- **Pull requests:** Los pull requests son solicitudes para incluir cambios en un repositorio. Permiten a los colaboradores revisar, comentar y aprobar los cambios propuestos antes de fusionarlos con la rama principal del proyecto.
-- **Integración continua:** GitHub Actions permite automatizar flujos de trabajo, como pruebas unitarias, construcción de proyectos y despliegue, directamente desde el repositorio de GitHub.
-- **Wikis de proyectos:** GitHub ofrece la posibilidad de crear wikis para documentar el proyecto, proporcionando un espacio para compartir información sobre la arquitectura, las mejores prácticas y los procesos de desarrollo.
-- **Gestión de proyectos:** GitHub Projects permite crear tableros kanban para organizar y priorizar tareas, así como realizar un seguimiento del progreso del proyecto.
+> [!TIP]
+>- **Seguimiento de problemas:** GitHub proporciona un sistema de seguimiento de problemas que permite a los usuarios reportar errores, solicitar características y discutir ideas.
+>- **Pull requests:** Los pull requests son solicitudes para incluir cambios en un repositorio. Permiten a los colaboradores revisar, comentar y aprobar los cambios propuestos antes de fusionarlos con la rama principal del proyecto.
+>- **Integración continua:** GitHub Actions permite automatizar flujos de trabajo, como pruebas unitarias, construcción de proyectos y despliegue, directamente desde el repositorio de GitHub.
+>- **Wikis de proyectos:** GitHub ofrece la posibilidad de crear wikis para documentar el proyecto, proporcionando un espacio para compartir información sobre la arquitectura, las mejores prácticas y los procesos de desarrollo.
+>- **Gestión de proyectos:** GitHub Projects permite crear tableros kanban para organizar y priorizar tareas, así como realizar un seguimiento del progreso del proyecto.
 
 ### Comandos útiles de Git para trabajar con GitHub
 Aunque GitHub es una plataforma en sí misma, se utiliza en conjunto con Git para gestionar repositorios. Algunos comandos útiles de Git para trabajar con GitHub incluyen:
@@ -250,3 +250,6 @@ El registro de referencia (`reflog`) registra los cambios en el puntero HEAD, lo
 
 > [!IMPORTANT]
 >Los comandos mencionados, los trucos específicos pueden variar según las necesidades del usuario y las particularidades del proyecto. Algunos ejemplos comunes incluyen la optimización de la configuración de Git, la automatización de tareas repetitivas mediante scripts personalizados, o el uso de extensiones de terceros para ampliar las capacidades de Git.
+
+> [!IMPORTANT]
+>- [Fuente de informacion](https://youtu.be/dQw4w9WgXcQ?si=On6C8UYxZdeGdQFH)
