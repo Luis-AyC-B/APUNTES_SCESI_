@@ -3,6 +3,7 @@
 ### CONCEPTO:
 
 Git es un sistema de control de versiones distribuido que facilita el seguimineto de cambios en archivos y la coordinacion del trabajo en equipo en proyectos de software.
+Git es un controlador de versiones.
 
 [![5c9deef127c7d783462103.png](https://i.postimg.cc/SQtqmJYB/5c9deef127c7d783462103.png)](https://postimg.cc/23vgwjwG)
 
@@ -62,6 +63,7 @@ Git es un sistema de control de versiones distribuido que facilita el seguiminet
 
 > [!NOTE]
 >GitHub no es solo una plataforma para el control de versiones y la colaboración; también es un centro para compartir código y una plataforma de redes sociales para desarrolladores. Sirve como un repositorio centralizado para el código fuente, lo que facilita compartir y colaborar en proyectos de software.
+"Es una web donde se puede compartir codigos."
 
 ### Crear un repositorio en GitHub
 Siguiendo estos pasos podemos crear un repositorio:
