@@ -1,4 +1,4 @@
-# *CURSO GIT*
+# *CURSO GIT 2024*
 ## Clase 1 :Introducción a Git
 ### CONCEPTO:
 
